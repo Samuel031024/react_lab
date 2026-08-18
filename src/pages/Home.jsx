@@ -4,10 +4,6 @@ export default function Home() {
 	const [open, setOpen] = useState(false);
   return (
     <div>
-	<button onClick={() => setOpen(!open)}>
-		{open ? 'stäng' : 'öppna'}
-		</button>
-		{open && <div className="knapp"></div>}
       <main>
         <h1>Välj tillverkare</h1>
         
@@ -17,6 +13,13 @@ export default function Home() {
           <a href="oneplus.html"><img src="/Logga_telefon/image_2.png" alt="One_plus_logga" /></a>
           <a href="samsung.html"><img src="/Logga_telefon/image_3.png" alt="Samsung_logga" /></a>
         </div>
+
+<div style={{ margin: '20px 0', padding: '15px', border: '1px solid #ddd', borderRadius: '8px' }}>
+	<button onClick={() => setOpen(!open)}>
+		{open ? 'stäng' : 'öppna'}
+		</button>
+		{open && <div className="knapp"></div>}
+</div>
 
         <div className="tabell-text">
           <h2>Räkna ut kostnad</h2>
