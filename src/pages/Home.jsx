@@ -18,7 +18,11 @@ export default function Home() {
 	<button onClick={() => setOpen(!open)}>
 		{open ? 'stäng' : 'öppna'}
 		</button>
-		{open && <div className="knapp"></div>}
+		{open && (
+            <div style={{ marginTop: '10px', color: '#333' }}>
+              <p><strong>Medelande</strong></p>
+            </div>
+          )}
 </div>
 
         <div className="tabell-text">
