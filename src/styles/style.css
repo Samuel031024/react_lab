@@ -113,6 +113,12 @@ main {
     margin-bottom: 100px;
     margin-top: 0;
 }
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  width: 100%;
+  padding-top: 50px;
+}
 
 .FAQ h1 {
     font-weight: bold;
