@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
-export default function App() {
+import { useState } from 'react';
+export default function Home() {
+	const [open, setOpen] = useState(false);
   return (
     <div>
+	<button onClick={() => setOpen(!open)}>
+		{open ? 'stäng' : 'öppna'}
+		</button>
+		{open && <div className="knapp"></div>}
       <main>
-        <button type="button">Klicka här</button>
         <h1>Välj tillverkare</h1>
         
         <div className="image-row">

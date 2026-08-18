@@ -2,12 +2,7 @@ export default function Contact() {
   return (
     <main>
       <h1>Kontakta oss</h1>
-      <button 
-        id="toggle-info-btn" 
-        style={{ marginBotton: '20px', padding: '10px', background: '#007bff', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
-      >
-        Visa/Dölj Kontaktuppgifter
-      </button>
+
       
       <div className="contact-container">
         <div className="contact-info">
