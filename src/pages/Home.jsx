@@ -14,16 +14,22 @@ export default function Home() {
           <a href="samsung.html"><img src="/Logga_telefon/image_3.png" alt="Samsung_logga" /></a>
         </div>
 
-<div style={{ margin: '20px 0', padding: '15px', border: '1px solid #ddd', borderRadius: '8px' }}>
-	<button onClick={() => setOpen(!open)}>
-		{open ? 'stäng' : 'öppna'}
-		</button>
-		{open && (
-            <div style={{ marginTop: '10px', color: '#333' }}>
-              <p><strong>Medelande</strong></p>
+<div className="hours-container">
+          <button 
+            type="button" 
+            className="toggle-btn"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? 'Dölj öppettider' : 'Visa öppettider'}
+          </button>
+
+          {open && (
+            <div className="hours-content">
+              <p><strong>Butikens öppettider:</strong></p>
+              <p>Mån–Fre: 10:00 – 18:00<br />Lör–Sön: Stängt</p>
             </div>
           )}
-</div>
+        </div>
 
         <div className="tabell-text">
           <h2>Räkna ut kostnad</h2>

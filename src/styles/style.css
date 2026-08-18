@@ -1,3 +1,40 @@
+/* Interaktiv öppettider-sektion */
+.hours-container {
+  text-align: center;
+  margin: 25px auto;
+  max-width: 350px;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.hours-content {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.hours-content p {
+  margin: 0;
+}
+
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	background-color: #F1F1F1;
